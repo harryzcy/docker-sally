@@ -5,5 +5,5 @@ RUN CGO_ENABLED=0 go install go.uber.org/sally@v1.3.0
 FROM gcr.io/distroless/base
 COPY --from=builder /go/bin/sally /bin/
 
-EXPOSE 5000
-CMD ["/bin/sally", "-yml", "site.yaml", "-port", "5000"]
+EXPOSE 8080
+CMD ["/bin/sally"]
