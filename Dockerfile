@@ -1,4 +1,4 @@
-FROM golang:1.20.2-alpine3.17 as builder
+FROM golang:1.20.6-alpine3.18 as builder
 
 RUN CGO_ENABLED=0 go install go.uber.org/sally@v1.3.0
 
