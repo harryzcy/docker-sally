@@ -1,8 +1,10 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
-  "labels": ["dependencies"]
+  "labels": [
+    "dependencies"
+  ]
 }
