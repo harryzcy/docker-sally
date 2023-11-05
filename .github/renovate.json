@@ -4,6 +4,9 @@
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
+  "ignorePresets": [
+    ":prHourlyLimit2"
+  ],
   "labels": [
     "dependencies"
   ]
