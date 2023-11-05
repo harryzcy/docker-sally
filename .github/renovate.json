@@ -1,11 +1,9 @@
 {
   "extends": [
     "config:recommended",
+    ":disableRateLimiting",
     ":automergeMinor",
     ":disableDependencyDashboard"
-  ],
-  "ignorePresets": [
-    ":prHourlyLimit2"
   ],
   "labels": [
     "dependencies"
