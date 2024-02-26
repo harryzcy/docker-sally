@@ -1,4 +1,4 @@
-FROM golang:1.21.6-alpine3.19 as builder
+FROM golang:1.22.0-alpine3.19 as builder
 
 RUN CGO_ENABLED=0 go install -ldflags="-w -s" go.uber.org/sally@v1.6.0
 
