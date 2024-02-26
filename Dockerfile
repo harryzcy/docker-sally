@@ -5,7 +5,7 @@ RUN CGO_ENABLED=0 go install -ldflags="-w -s" go.uber.org/sally@v1.6.0
 FROM gcr.io/distroless/base:nonroot
 
 USER nonroot:nonroot
-COPY --from=builder /go/bin/sally /bin/
+COPY --from=builder --chown=nonroot:nonroot /go/bin/sally /bin/
 
 EXPOSE 8080
 
