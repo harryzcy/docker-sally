@@ -1,12 +1,5 @@
 {
   "extends": [
-    "config:best-practices",
-    ":disableRateLimiting",
-    ":automergeMinor",
-    ":disableDependencyDashboard",
-    ":pinDependencies"
-  ],
-  "labels": [
-    "dependencies"
+    "github>harryzcy/renovate-config"
   ]
 }
