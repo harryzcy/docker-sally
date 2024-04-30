@@ -2,7 +2,7 @@ FROM golang:1.22.2@sha256:d5302d40dc5fbbf38ec472d1848a9d2391a13f93293a6a5b0b87c9
 
 RUN CGO_ENABLED=0 go install -ldflags="-w -s" go.uber.org/sally@v1.6.0
 
-FROM busybox:1.36.1-glibc@sha256:cb6aeb580841ccd038a2fb39a9d89948a4eced95ed02c1f726d599da65c8f0c5 as health
+FROM busybox:1.36.1-glibc@sha256:735f3e2573d5540476f997fbf562907d6901f995d6feb0e18132fade186f2230 as health
 
 FROM gcr.io/distroless/base:nonroot@sha256:e238d402d6de8907263a79122ea6fb2238d336abf6b971de323bb72ef4001ee4
 
