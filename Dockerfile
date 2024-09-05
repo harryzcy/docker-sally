@@ -1,4 +1,4 @@
-FROM golang:1.23.0@sha256:1a6db32ea47a4910759d5bcbabeb8a8b42658e311bd8348ea4763735447c636c as builder
+FROM golang:1.23.0@sha256:9b09ffe3fef804395771af434bfc35a37e5209114d13e51af9339f5c5827c838 as builder
 
 RUN CGO_ENABLED=0 go install -ldflags="-w -s" go.uber.org/sally@v1.6.0
 
